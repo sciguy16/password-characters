@@ -44,4 +44,7 @@ fn main() {
             password.chars().collect::<Vec<_>>()[idx - 1]
         );
     }
+
+    //TODO Zero the memory properly
+    password.clear();
 }
