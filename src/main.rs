@@ -5,6 +5,12 @@ fn main() {
     let stdin = io::stdin();
     let mut stdout = io::stdout();
 
+    println!("{}", concat!(
+        "This utility takes in a password and a list of indices ",
+        "and selects those characters. No more counting through long ",
+        "passwords to try to find the right characters!"
+    ));
+
     // Read in the password
     let mut password = String::new();
     print!("Password: ");
@@ -28,6 +34,8 @@ fn main() {
             break;
         }
     }
+
+    println!("");
 
     for idx in indices {
         println!(
