@@ -30,9 +30,10 @@ fn main() {
     }
 
     for idx in indices {
-        println!("Character {} is {}", idx, password.
-             chars().
-             collect::<Vec<_>>()[idx-1]
+        println!(
+            "Character {} is {}",
+            idx,
+            password.chars().collect::<Vec<_>>()[idx - 1]
         );
     }
 }
