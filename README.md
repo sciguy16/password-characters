@@ -4,9 +4,12 @@ A utility to help with the "enter the 12th, 35th, and 63rd characters from your 
 ## Usage
 `password-characters` then enter password and which indices to print.
 
+## Installation
+`cargo install password-characters`
+
 ## Example
 ```
--./target/release/password-characters
+$ password-characters
 This utility takes in a password and a list of indices and selects those characters. No more counting through long passwords to try to find the right characters!
 Password: t92hdvzeg(£@wem5elk
 Character index: 1
