@@ -36,15 +36,22 @@ fn main() {
     }
 
     println!("");
-
-    for idx in indices {
-        println!(
-            "Character {} is {}",
-            idx,
-            password.chars().collect::<Vec<_>>()[idx - 1]
-        );
-    }
+    print!("{}", print_chars(&password, &indices));
 
     //TODO Zero the memory properly
     password.clear();
+}
+
+#[inline]
+fn print_chars(password: &str, indices: &Vec<usize>) -> String {
+    let mut output = String::new();
+    for idx in indices {
+        output.push_str(format!(
+            "Character {} is {}\n",
+            idx,
+            password.chars().collect::<Vec<_>>()[idx - 1]
+        ).as_str());
+    }
+
+    output
 }
