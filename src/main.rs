@@ -55,3 +55,17 @@ fn print_chars(password: &str, indices: &Vec<usize>) -> String {
 
     output
 }
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn test_print_chars() {
+        let password: String = "password1234".into();
+        let indices = vec![2_usize, 5, 7];
+
+        assert_eq!(
+            super::print_chars(&password, &indices),
+            String::from("Character 2 is a\nCharacter 5 is w\nCharacter 7 is r\n"),
+            );
+    }
+}
