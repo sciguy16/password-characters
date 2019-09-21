@@ -6,6 +6,7 @@ edition = "2018"
 repository = "https://github.com/sciguy16/password-characters"
 description = "A utility to help with the \"enter the 12th, 35th, and 63rd characters from your password\" situations"
 license = "GPL-3.0-or-later"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
